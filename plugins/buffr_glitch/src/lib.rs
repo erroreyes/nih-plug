@@ -74,7 +74,7 @@ struct BuffrGlitchParams {
     /// aesthetically pleasing.
     #[id = "attack_ms"]
     attack_ms: FloatParam,
-    /// The attack time in milliseconds. Useful to avoid clicks. Or to introduce them if that's
+    /// The release time in milliseconds. Useful to avoid clicks. Or to introduce them if that's
     /// aesthetically pleasing.
     #[id = "release_ms"]
     release_ms: FloatParam,
@@ -153,7 +153,7 @@ impl Default for BuffrGlitchParams {
                 2.0,
                 FloatRange::Skewed {
                     min: 0.0,
-                    max: 50.0,
+                    max: 2000.0,
                     factor: FloatRange::skew_factor(-2.5),
                 },
             )
