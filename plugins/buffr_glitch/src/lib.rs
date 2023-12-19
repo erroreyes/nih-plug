@@ -22,7 +22,7 @@ mod envelope;
 
 /// The maximum number of octaves the sample can be pitched down. This is used in calculating the
 /// recording buffer's size.
-pub const MAX_OCTAVE_SHIFT: u32 = 2;
+pub const MAX_OCTAVE_SHIFT: u32 = 4;
 
 /// The number of channels supported by the plugin. We'll only do stereo for now.
 const NUM_CHANNELS: u32 = 2;
